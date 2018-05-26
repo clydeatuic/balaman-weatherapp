@@ -4,7 +4,7 @@ var client = webdriverio.remote(options);
 client
     .init()
     .url('https://balaman-weatherapp.herokuapp.com/')
-    .getText().then(function(text){
+    .getText('#isUpdated').then(function(text){
         console.log(text);
     //.setValue('#search_form_input_homepage', 'WebdriverIO')
     //.click('#search_button_homepage')
